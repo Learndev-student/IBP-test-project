@@ -1,8 +1,8 @@
 <?php
 //Credentials to connect with MySQL server
-$servername = "localhost";
-$user = "root";
-$passwd = "";
+$server_name = "localhost";
+$server_user = "root";
+$server_passwd = "";
 
 //Database name
 $dbname = "accounts";
@@ -11,7 +11,7 @@ $dbname = "accounts";
 $table = "logins";
 
 //Initiate connection with MySQL server
-$conn = new mysqli($servername, $user, $passwd, $dbname);
+$conn = new mysqli($server_name, $server_user, $server_passwd, $dbname);
 if($conn->connect_error){
 
 	//Exit and show error in case of error
