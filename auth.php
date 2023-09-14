@@ -13,7 +13,7 @@ include "connection.php";
 $user = $_POST["user"];
 
 //MySQL query for getting credentials of user
-$sql = "select name, passwd_hash from logins where user='$user'";
+$sql = "select name, passwd from $table where user='$user'";
 
 //MySQL query result
 $result = $conn->query($sql);
@@ -23,7 +23,7 @@ if ($result->num_rows>0){
 
 	//If data exists
 	$row = $result->fetch_assoc();
-	if($_POST["passwd"]===$row['passwd_hash']){
+	if($_POST["passwd"]===$row['passwd']){
 
 		//Greet user for successful login
 		echo "Welcome ".$row['name'];
