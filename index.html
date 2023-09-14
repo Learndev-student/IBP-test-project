@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login</h1>
+			<form name="login"  method="post" action="auth.php">
+				<label> Username: </label>
+				<input type="text" required name="user">
+				<label> Password: </label>
+				<input type="password" required name="passwd">
+				<input type="submit" value="Login"/>
+			</form>
+			<p id="notregistered" align="right"><a href="./create_acc.html">Create Account</a></p>
+		</div>
+	</body>
+</html>

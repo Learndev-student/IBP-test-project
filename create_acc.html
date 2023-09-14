@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Account</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Create Account</h1>
+			<form name="create_acc" method="post" action="create_acc.php">
+				<label> Name </label>
+				<input type="text" required name="name">
+				<label> Email </label>
+				<input type="text" required name="email">
+				<label> Password </label>
+				<input type="password" required name="passwd">
+				<input type="submit" value="Create Account"/>
+			</form>
+			<p id="registered" align="right"><a href="./index.html">Login</a></p>
+		</div>
+	</body>
+</html>
